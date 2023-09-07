@@ -79,7 +79,8 @@ def update_graph(selected_sector, selected_years):
                                (merged_df_dt['Time_Period_dt'] <= end_date)]
     
     fig = px.line(filtered_df, x='Time_Period_dt', y=selected_sector,
-                  title=f"{selected_sector} - Unemployment Rate Over Time")
+                title=f"{selected_sector} - Unemployment Rate Over Time",
+                labels={'Time_Period_dt': 'Time Period'})  # Updating the x-axis label
     
     return fig
 
