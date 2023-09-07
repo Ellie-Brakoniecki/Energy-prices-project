@@ -60,11 +60,11 @@ An interactive dashboard was built using Plotly Dash to visualise the data. The 
 
 # Conclusion and Recommendations
 
-# Our analysis found a complex relationship between rising energy prices and unemployment rates across various sectors in the British economy. Contrary to initial expectations, our models indicated a negative correlation between energy prices and unemployment rates, particularly in sectors like manufacturing and construction. This suggests that the impact of rising energy prices on unemployment is not straightforward and likely influenced by multiple factors, possibly with a lag effect, as our data only extends to Q1 2023.
+Our analysis found a complex relationship between rising energy prices and unemployment rates across various sectors in the British economy. Contrary to initial expectations, our models indicated a negative correlation between energy prices and unemployment rates, particularly in sectors like manufacturing and construction. This suggests that the impact of rising energy prices on unemployment is not straightforward and likely influenced by multiple factors, possibly with a lag effect, as our data only extends to Q1 2023.
 
-# Given these complexities, we recommend that any policy aimed at mitigating the effects of rising energy costs should be sector-specific and consider a range of economic variables. Further investigation is also needed to determine the time lag between changes in energy prices and their impact on employment.
+Given these complexities, we recommend that any policy aimed at mitigating the effects of rising energy costs should be sector-specific and consider a range of economic variables. Further investigation is also needed to determine the time lag between changes in energy prices and their impact on employment.
 
-# limitations and further work
+# Limitations and further work
 
 Time Constraints: Due to limited time, the models used could benefit from further tuning for improved accuracy.
 
