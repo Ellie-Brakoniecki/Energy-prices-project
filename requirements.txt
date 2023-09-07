@@ -1,0 +1,10 @@
+pandas
+openpyxl
+xlrd
+seaborn
+matplotlib.pyplot
+scikit-learn
+statsmodels
+dash
+dash.dependencies
+plotly.express
