@@ -1,0 +1,37 @@
+/* Apply a background color to the entire page */
+body {
+    background-color: #f5f5f5;
+    font-family: Arial, sans-serif;
+}
+
+/* Style the header */
+h1 {
+    font-size: 36px;
+    color: #333;
+}
+
+/* Style the dropdown */
+#sector-dropdown {
+    width: 50%;
+    margin-bottom: 20px;
+    padding: 10px;
+    font-size: 16px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Style the RangeSlider */
+#time-slider {
+    width: 80%;
+    margin-bottom: 20px;
+}
+
+/* Style the Plotly graph */
+#line-plot {
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
