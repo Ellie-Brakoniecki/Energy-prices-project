@@ -5,6 +5,8 @@ The analysis is in a jupyter notebook - folder `src/analysis.ipynb`
 
 **Running the dashboard**
 To run the dashboard run `python dashboard.py` in the terminal and open the weblink generated
+![image](https://github.com/Ellie-Brakoniecki/Energy-prices-project/assets/112866399/61921b2d-6e38-4dd2-be53-8d52a1879a5c)
+
 
 Research Report: Impact of Rising Energy Prices on Unemployment Rates Across Economic Sectors in Great Britain
 
