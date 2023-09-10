@@ -5,6 +5,8 @@ The analysis is in a jupyter notebook - folder `src/analysis.ipynb`
 
 **Running the dashboard**
 To run the dashboard run `python dashboard.py` in the terminal and open the weblink generated
+![image](https://github.com/Ellie-Brakoniecki/Energy-prices-project/assets/112866399/61921b2d-6e38-4dd2-be53-8d52a1879a5c)
+
 
 Research Report: Impact of Rising Energy Prices on Unemployment Rates Across Economic Sectors in Great Britain
 
@@ -67,6 +69,7 @@ Given these complexities, we recommend that any policy aimed at mitigating the e
 # Limitations and further work
 
 Time Constraints: Due to limited time, the models used could benefit from further tuning for improved accuracy.
+Include more features: relationship between energy prices and unemployment influenced by many factors . Incorporate other variables like global economics, tech changes, government policies. 
 
 Seasonal Variations: Investigate the seasonal variations in unemployment rates to ascertain if the effect of energy prices could be influenced by seasonality.
 
