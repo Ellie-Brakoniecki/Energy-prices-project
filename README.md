@@ -69,6 +69,7 @@ Given these complexities, we recommend that any policy aimed at mitigating the e
 # Limitations and further work
 
 Time Constraints: Due to limited time, the models used could benefit from further tuning for improved accuracy.
+Include more features: relationship between energy prices and unemployment influenced by many factors . Incorporate other variables like global economics, tech changes, government policies. 
 
 Seasonal Variations: Investigate the seasonal variations in unemployment rates to ascertain if the effect of energy prices could be influenced by seasonality.
 
