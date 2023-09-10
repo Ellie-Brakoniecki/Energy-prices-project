@@ -57,31 +57,59 @@ app.layout = html.Div([
         step=None
     ),
     
-    dcc.Graph(id='line-plot',         
+    dcc.Graph(id='unemployment-plot',         
             style={
             'width': '80%',                
             'border': '1px solid #ccc',  
             'box-shadow': '0 2px 4px rgba(0, 0, 0, 0.1)',  
         }),
+    dcc.Graph(id='energy-plot',         
+            style={
+            'width': '80%',                
+            'border': '1px solid #ccc',  
+            'box-shadow': '0 2px 4px rgba(0, 0, 0, 0.1)',  
+        }),
+    
 ])
 
 
 @app.callback(
-    Output('line-plot', 'figure'),
+    Output('unemployment-plot', 'figure'),
     [Input('sector-dropdown', 'value'),
      Input('time-slider', 'value')]
 )
-def update_graph(selected_sector, selected_years):
+def update_unemployment_graph(selected_sector, selected_years):
     start_date = pd.to_datetime(selected_years[0], unit='s')
     end_date = pd.to_datetime(selected_years[1], unit='s')
     
     filtered_df = merged_df_dt[(merged_df_dt['Time_Period_dt'] >= start_date) & 
                                (merged_df_dt['Time_Period_dt'] <= end_date)]
     
+    # plot the selected sector's data
     fig = px.line(filtered_df, x='Time_Period_dt', y=selected_sector,
-                title=f"{selected_sector} - Unemployment Rate Over Time",
-                labels={'Time_Period_dt': 'Time Period'})  # Updating the x-axis label
+                  title=f"{selected_sector} & Energy Prices Over Time",
+                  labels={'Time_Period_dt': 'Time Period'}) 
     
+    return fig
+
+
+@app.callback(
+    Output('energy-plot', 'figure'),
+    Input('time-slider', 'value'),
+)
+def update_energy_graph(selected_years):
+    start_date = pd.to_datetime(selected_years[0], unit='s')
+    end_date = pd.to_datetime(selected_years[1], unit='s')
+    
+    filtered_df = merged_df_dt[(merged_df_dt['Time_Period_dt'] >= start_date) & 
+                               (merged_df_dt['Time_Period_dt'] <= end_date)]
+    
+    
+    fig = px.line(filtered_df, x= "Time_Period_dt", 
+                  y=['Gas: Average (Pence per kWh)', 'Electricity: Average (Pence per kWh)'],
+                  title="Energy Prices over time", 
+                  labels={"Time_Period_dt": "Time Period"}) 
+    fig.update_layout(legend=dict(x=0, y=1, traceorder="normal", orientation="h"))
     return fig
 
 
