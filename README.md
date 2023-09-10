@@ -56,7 +56,7 @@ Model Performance: The ARIMA models provided forecasts for future unemployment r
 
 An interactive dashboard was built using Plotly Dash to visualise the data. The dashboard provides real-time insights into how changes in energy prices could potentially affect unemployment rates in different sectors. The dashboard serves as a practical tool to assess the current state of energy prices and unemployment, offering a more dynamic way to visualise the data. 
 
-
+![image](https://github.com/Ellie-Brakoniecki/Energy-prices-project/assets/112866399/9b556981-4a28-4c85-8f0e-6bb6a28a4206)
 
 
 
